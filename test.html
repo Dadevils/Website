@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="test.css">
+    </head>
+    <body>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+        
+                <div class="slide first">
+                    <img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+                <div class="slide">
+                    <img src="https://images.pexels.com/photos/78793/automotive-defect-broken-car-wreck-78793.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+                <div class="slide">
+                    <img src="https://images.pexels.com/photos/4098224/pexels-photo-4098224.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+                <div class="slide">
+                    <img src="https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+              
+        
+        
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+        
+            </div>
+        
+        
+        
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>   
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+        </script>
+    </body>
+</html>
+
+
+
