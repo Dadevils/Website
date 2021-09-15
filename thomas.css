@@ -1,0 +1,264 @@
+* {
+    font-family: Oxygen;
+    margin: 0px;
+}
+
+
+#f1 {
+    width: 100%;
+    background-color: rgba(47, 87, 129, 0.28);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#f2 {
+    width: 100%;
+
+}
+
+#f3 {
+    padding: 25px 20px;
+    padding-right: 35px;
+    float: left;
+}
+
+#f4 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+#f5 {
+    line-height: 4.75em;
+    border-left: 1px solid grey;
+}
+
+
+#f6 {
+    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+#f7 {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+.fh1 {
+    font-size: 27px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    line-height: 1.3em;
+}
+
+.fh2 {
+    font-size: 14px;
+    letter-spacing: 0.01em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#s1 {
+    background-image: url(https://wallpaperaccess.com/full/1638085.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 140px;
+
+}
+
+#s2 {
+    text-align: center;
+    color: white;
+}
+
+
+#sf1 {
+    font-size: 40px;
+    line-height: 1.25em;
+}
+
+#sf2 {
+    font-size: 20px;
+}
+
+#sf3 {
+    font-size: 24px;
+    line-height: 2em;
+}
+
+#s4 {
+    padding-top: 22px;
+    padding-bottom: 26px;
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+
+.divider {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.divider-down {
+    border-bottom: 2px solid lightslategray;
+    padding-bottom: 35px;
+    margin-top: 30px;
+}
+
+.divider-up {
+    border-top: 2px solid lightslategray;
+    padding-top: 35px;
+}
+
+.title-overview {
+    margin-top: 50px;
+}
+
+.title-overview h2 {
+    font-size: 32px;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+.flex-show {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flow-show div div img {
+    display: inline-block;
+}
+
+.flow-show div div p {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+.simulslider {
+    margin: 0px;
+    padding:0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+
+/* css for manual navigation */
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+     
+}
+
+.manual-btn {
+    border: 2px solid lightblue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+
+.manual-btn:hover {
+    background: lightblue;
+}
+
+
+
+#radio1:checked ~ .first {
+    margin-right: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-right: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-right: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-right: -60%;
+}
+
+#radio5:checked ~ .first {
+    margin-right: -80%;
+}
+
+ 
