@@ -87,7 +87,9 @@
                         <input type="radio" name="radio-btn" id="radio2">
                         <input type="radio" name="radio-btn" id="radio3">
                         <input type="radio" name="radio-btn" id="radio4">
-                
+                        <input type="radio" name="radio-btn" id="radio5">
+
+
                         <div class="slide first">
                             <div class="slide-image" id="first-image"></div>
                             <!--<img src="https://cdn.pixabay.com/photo/2017/07/27/17/39/clause-2546124_960_720.jpg">-->
@@ -104,7 +106,10 @@
                             <div class="slide-image" id="forth-image"></div>
                             <!--<img src="https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">-->
                         </div>
-                      
+                        <div class="slide">
+                            <div class="slide-image" id="fifth-image"></div>
+                            <!--<img src="https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">-->
+                        </div>
                 
                 
                         <div class="navigation-auto">
@@ -112,6 +117,8 @@
                             <div class="auto-btn2"></div>
                             <div class="auto-btn3"></div>
                             <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+
                         </div>
                 
                     </div>
@@ -123,6 +130,8 @@
                         <label for="radio2" class="manual-btn"></label>
                         <label for="radio3" class="manual-btn"></label>
                         <label for="radio4" class="manual-btn"></label>   
+                        <label for="radio5" class="manual-btn"></label>   
+
                     </div>
                 </div>
         
@@ -131,7 +140,7 @@
                 setInterval(function() {
                     document.getElementById('radio' + counter).checked = true;
                     counter++;
-                    if (counter > 4) {
+                    if (counter > 5) {
                         counter = 1;
                     }
                 }, 5000);
@@ -141,6 +150,8 @@
                 var radio2 = document.getElementById('radio2')
                 var radio3 = document.getElementById('radio3')
                 var radio4 = document.getElementById('radio4')
+                var radio5 = document.getElementById('radio4')
+
         
         
                 radio1.addEventListener('change', function() {
@@ -157,6 +168,10 @@
         
                 radio4.addEventListener('change', function() {
                     counter = 4;
+                });
+
+                radio5.addEventListener('change', function() {
+                    counter = 5;
                 });
         
          
