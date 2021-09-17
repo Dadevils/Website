@@ -156,15 +156,12 @@ li a {
     display: flex;
     flex-wrap: wrap;
 }
-
 .flow-show div div img {
     display: inline-block;
 }
-
 .flow-show div div p {
     display: inline-block;
 }
-
 */
 
 
@@ -226,7 +223,9 @@ li a {
 }
 
 #second-image {
-    background-image: url(https://images.unsplash.com/photo-1423592707957-3b212afa6733?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGVnYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
+    /*background-image: url(https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);https://images.pexels.com/photos/4048602/pexels-photo-4048602.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500*/
+    background-image: url(https://image.shutterstock.com/image-illustration/two-car-crash-on-white-260nw-525156406.jpg);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -241,6 +240,13 @@ li a {
 
 #forth-image {
     background-image: url(https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#fifth-image {
+    background-image: url(https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -292,6 +298,10 @@ li a {
     margin-left: -60%;
 }
 
+#radio5:checked ~ .first {
+    margin-left: -60%;
+}
+
 
 .navigation-auto {
     position: absolute;
@@ -329,4 +339,6 @@ li a {
     background: black;
 }
 
-
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background: black;
+}
