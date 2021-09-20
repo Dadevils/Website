@@ -14,63 +14,72 @@
     justify-content: space-around;
 }
 
-#f2 {
+.options-menu {
     width: 100%;
-
-}
-
-#f3 {
-    padding: 25px 20px;
-    padding-right: 35px;
-    float: left;
-}
-
-#f4 {
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
-}
-
-#f5 {
     line-height: 4.75em;
-    border-left: 1px solid grey;
-}
 
-
-#f6 {
-    
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-}
-
-#f7 {
     display: flex;
     justify-content: center;
 }
 
-li {
+.title-header {
+    padding: 25px 20px;
+    padding-bottom: 10px;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.title-box {
+
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+}
+
+/*
+#f5 {
+    line-height: 4.75em;
+    border-left: 1px solid grey;
+}
+*/
+
+
+/*
+#f7 {
+    display: flex;
+    justify-content: center;
+}
+*/
+.options-choice {
     display: inline-block;
     margin-right: 15px;
     padding-left: 2px;
     padding-right: 2px;
+
+    font-size: 1.25em;
 }
 
-li a {
+.options-choice a {
     color: black;
     text-decoration: none;
 }
 
-.fh1 {
-    font-size: 27px;
-    font-weight: 500;
+.title {
+    font-size: 2.25em;
+    font-weight: 575;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    line-height: 1.3em;
+    line-height: 1em;
+    text-align: center;
 }
 
-.fh2 {
-    font-size: 14px;
+.subtitle {
+    font-size: 1.2em;
     letter-spacing: 0.01em;
+    text-align: center;
+
+    padding-bottom: 5px;
 }
 
 
@@ -216,7 +225,7 @@ li a {
 
 
 #first-image {
-    background-image: url(https://cdn.pixabay.com/photo/2017/07/27/17/39/clause-2546124_960_720.jpg);
+    background-image: url(work.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -224,7 +233,7 @@ li a {
 
 #second-image {
     /*background-image: url(https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);https://images.pexels.com/photos/4048602/pexels-photo-4048602.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500*/
-    background-image: url(https://image.shutterstock.com/image-illustration/two-car-crash-on-white-260nw-525156406.jpg);
+    background-image: url(car.jpg);
 
     background-repeat: no-repeat;
     background-position: center;
@@ -232,21 +241,21 @@ li a {
 }
 
 #third-image {
-    background-image: url(https://images.pexels.com/photos/4098224/pexels-photo-4098224.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-image: url(divorce.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #forth-image {
-    background-image: url(https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-image: url(contract.jpy.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #fifth-image {
-    background-image: url(https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-image: url(other_law2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -299,7 +308,7 @@ li a {
 }
 
 #radio5:checked ~ .first {
-    margin-left: -60%;
+    margin-left: -80%;
 }
 
 
@@ -342,3 +351,343 @@ li a {
 #radio5:checked ~ .navigation-auto .auto-btn5 {
     background: black;
 }
+
+
+
+.slide-image .slide-description {
+    padding: 20px;
+    display: flex;
+}
+
+.slide-description h1 {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    opacity: 0.95;
+
+
+    padding: 20px 30px;
+    margin: 15px;
+ 
+    
+    font-size: 3.5vw;
+    font-weight: bold;
+    line-height: 1.125em;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+}
+
+/* Welcome Area Start */
+
+.welcome-text {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(235, 235, 235);
+
+    padding-top: 75px;
+    padding-bottom: 60px;
+
+}
+
+.inner-welcome-text {
+    width: 60%;
+}
+
+.welcome-prefix {
+    font-size: 1.75em;
+}
+
+.welcome-title {
+    font-size: 2.25em;
+    font-weight: 400;
+
+    padding-bottom: 30px;
+}
+
+.welcome-subtitle {
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+
+/* Welcome Area End */
+
+
+
+/* Location Bar Start */
+
+.location-show {
+    width: 100%;
+    height: auto;
+    margin-bottom: 85px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.location-show .location {
+    margin: 15px 10px;
+    /*padding: 5px;*/
+    border: 1px solid #3f5461;
+    border-radius: 5px;
+
+    width: 20%;
+    height: 300px;
+}
+
+#first-location {
+    background-image: url(bamberg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#second-location {
+    background-image: url(burbach.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#third-location {
+    background-image: url(leun.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.location .location-description {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+
+    background-color: rgba(96, 192, 221, 0);
+    text-align: center;
+    
+    transition: background-color 0.5s linear 0.125s;
+}
+
+.location-description .inner-text {
+    height: 100%;
+    font-size: 1.25em;
+    margin-left: 7px;
+    margin-right: 7px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+    opacity: 0; 
+    transition: opacity 0.4s linear 0.3s;
+    
+}
+
+.location:hover .location-description{
+    /*background-color: rgba(50, 120, 167, 1);*/
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.location:hover .location-description .inner-text{
+    opacity: 1;
+
+}
+
+.location-name {
+    line-height: 1.9em;
+    border-bottom: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px;
+
+    
+
+    /*
+    margin: 15px 20%;
+    width: 50%;
+    margin-top: 15px;  
+    margin-bottom: 15px;
+    */
+}
+
+.uplifter {
+    height: 15%;
+}
+
+
+.subsidary-title {
+    text-align: center;
+    font-size: 2.75em;
+    font-weight: 100;
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* Location Bar End */
+
+
+
+
+
+
+/* Footer start */
+
+
+/*
+footer {
+    background-color: rgb(235, 235, 235);
+}
+*/
+
+
+.contact{
+    margin: 0 auto;
+    margin-bottom: 80px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    width: 65%;
+}
+
+.adress {
+    margin: 30px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+.adress h3 {
+    /*line-height: 2em;*/
+    margin-bottom: 5px;
+}
+
+.map-container {
+    margin-top: 42px;
+    width: 55%;
+}
+
+.map {
+    width: 100%;
+    height: 478px;
+    margin: 30px;
+    margin-top: 50px;
+
+    border: 1px solid grey;
+    border-radius: 15px;
+    
+}
+
+.adress-telephone {
+    margin-top: 20px;
+}
+
+.secondary-adresses {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.secondary-adress {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.secondary-adress .adress-telephone {
+    margin-top: 0px;
+}
+
+
+#leun-switch:hover {
+    cursor: pointer;
+}
+
+#bamberg-switch:hover {
+    cursor: pointer;
+}
+
+#burbach-switch:hover {
+    cursor: pointer;
+}
+
+
+
+
+.p-inline {
+    width: 100%;
+
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: lightblue;
+    font-size: 1.25em;
+}
+
+.p-inline p {
+    padding: 20px;
+}
+
+/* Footer end */
+
+
+/* Change of Footer order trough screen shrinkage Start */
+
+@media only screen and (max-width: 1085px) {
+    .contact #adresses {
+        display: inline-flex;
+
+    }
+
+    .secondary-adresses {
+        margin-top: 0px;
+    }
+
+    .secondary-adress {
+        margin-top: 0px;
+    }
+
+    .adress {
+        margin-top: 20px;
+    }
+
+    .map-container {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+   
+
+}
+
+/* Change of Footer order trough screen shrinkage End */
+
+
+
+
+
+/* Change of subsidary show trough screen shrink start */
+
+@media only screen and (max-width: 1000px) {
+    .location-show .location {
+        width: 80%;
+        height: 200px;
+    }
+
+    .location-name {
+        margin: 15px 25%;
+    }
+}
+
+/* Change of subsidary show trough screen shrink end */
